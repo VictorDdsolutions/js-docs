@@ -249,8 +249,8 @@ const [expanded, setExpanded] = useState<Record<string, boolean>>({});
 
   return (
     <div className="w-full h-full bg-[#262624] p-8 overflow-auto">
-      <div className="max-w-full sm:max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+      <div className="w-full mx-auto">
+        <h1 className="text-lg sm:text-3xl font-bold text-white mb-8 flex items-center gap-3">
           <FileText className="w-8 h-8 text-emerald-400" />
           Javascript docs - learning pipeline (cheat sheet)
         </h1>
@@ -275,7 +275,7 @@ const [expanded, setExpanded] = useState<Record<string, boolean>>({});
                 >
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-3">
                     <Folder className="w-5 h-5 text-emerald-400" />
-                    <span className="text-lg font-semibold text-white">{section.title}</span>
+                    <span className="text-sm sm:text-lg font-semibold text-white">{section.title}</span>
                     {section.items.length > 0 && (
                       <span className="text-xs bg-slate-700 text-slate-300 px-2 py-1 rounded-full">
                         {section.items.length} topics
