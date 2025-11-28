@@ -249,7 +249,7 @@ const [expanded, setExpanded] = useState<Record<string, boolean>>({});
 
   return (
     <div className="w-full h-full bg-[#262624] p-8 overflow-auto">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-full sm:max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
           <FileText className="w-8 h-8 text-emerald-400" />
           Javascript docs - learning pipeline (cheat sheet)
@@ -273,7 +273,7 @@ const [expanded, setExpanded] = useState<Record<string, boolean>>({});
                   className="p-4 cursor-pointer flex items-center justify-between hover:bg-slate-700/50 rounded-lg transition-colors"
                   onClick={() => toggleExpand(section.id)}
                 >
-                  <div className="flex items-center gap-3">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-3">
                     <Folder className="w-5 h-5 text-emerald-400" />
                     <span className="text-lg font-semibold text-white">{section.title}</span>
                     {section.items.length > 0 && (
