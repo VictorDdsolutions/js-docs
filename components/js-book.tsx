@@ -247,6 +247,71 @@ const [expanded, setExpanded] = useState<Record<string, boolean>>({});
     }
   ];
 
+  const tssections: Section[] = [
+    {
+      id: 'basics',
+      title: 'The Basics',
+      items: [
+        { name: 'Overview', url: 'https://www.typescriptlang.org/docs/handbook/2/basic-types.html' },
+        { name: 'Everyday Types', url: 'https://www.typescriptlang.org/docs/handbook/2/everyday-types.html' },
+        { name: 'Narrowing', url: 'https://www.typescriptlang.org/docs/handbook/2/narrowing.html' },
+        { name: 'More on Functions', url: 'https://www.typescriptlang.org/docs/handbook/2/functions.html' },
+        { name: 'Object Types', url: 'https://www.typescriptlang.org/docs/handbook/2/objects.html' }
+      ]
+    },
+    {
+      id: 'type-manipulation',
+      title: 'Type Manipulation',
+      items: [
+        { name: 'Overview', url: 'https://www.typescriptlang.org/docs/handbook/2/types-from-types.html' },
+        { name: 'Generics', url: 'https://www.typescriptlang.org/docs/handbook/2/generics.html' },
+        { name: 'Keyof Type Operator', url: 'https://www.typescriptlang.org/docs/handbook/2/keyof-types.html' },
+        { name: 'Typeof Type Operator', url: 'https://www.typescriptlang.org/docs/handbook/2/typeof-types.html' },
+        { name: 'Indexed Access Types', url: 'https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html' },
+        { name: 'Conditional Types', url: 'https://www.typescriptlang.org/docs/handbook/2/conditional-types.html' },
+        { name: 'Mapped Types', url: 'https://www.typescriptlang.org/docs/handbook/2/mapped-types.html' },
+        { name: 'Template Literal Types', url: 'https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html' }
+      ]
+    },
+    {
+      id: 'classes',
+      title: 'Classes',
+      items: [
+        { name: 'Overview', url: 'https://www.typescriptlang.org/docs/handbook/2/classes.html' }
+      ]
+    },
+    {
+      id: 'modules',
+      title: 'Modules',
+      items: [
+        { name: 'Overview', url: 'https://www.typescriptlang.org/docs/handbook/2/modules.html' }
+      ]
+    },
+    {
+      id: 'references',
+      title: 'References',
+      items: [
+        { name: 'Overview', url: 'https://www.typescriptlang.org/docs/handbook/utility-types.html' },
+        { name: 'Utility Types', url: 'https://www.typescriptlang.org/docs/handbook/utility-types.html' },
+        { name: 'Decorators', url: 'https://www.typescriptlang.org/docs/handbook/decorators.html' },
+        { name: 'Declaration Merging', url: 'https://www.typescriptlang.org/docs/handbook/declaration-merging.html' },
+        { name: 'Enums', url: 'https://www.typescriptlang.org/docs/handbook/enums.html' },
+        { name: 'Iterators and Generators', url: 'https://www.typescriptlang.org/docs/handbook/iterators-and-generators.html' },
+        { name: 'JSX', url: 'https://www.typescriptlang.org/docs/handbook/jsx.html' },
+        { name: 'Mixins', url: 'https://www.typescriptlang.org/docs/handbook/mixins.html' },
+        { name: 'Namespaces', url: 'https://www.typescriptlang.org/docs/handbook/namespaces.html' },
+        { name: 'Namespaces and Modules', url: 'https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html' },
+        { name: 'Symbols', url: 'https://www.typescriptlang.org/docs/handbook/symbols.html' },
+        { name: 'Triple-Slash Directives', url: 'https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html' },
+        { name: 'Type Compatibility', url: 'https://www.typescriptlang.org/docs/handbook/type-compatibility.html' },
+        { name: 'Type Inference', url: 'https://www.typescriptlang.org/docs/handbook/type-inference.html' },
+        { name: 'Variable Declaration', url: 'https://www.typescriptlang.org/docs/handbook/variable-declarations.html' },
+        { name: 'Modules - Reference', url: 'https://www.typescriptlang.org/docs/handbook/modules/reference.html' },
+        { name: 'Declaration Reference', url: 'https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html' },
+        { name: 'Library Structures', url: 'https://www.typescriptlang.org/docs/handbook/declaration-files/library-structures.html' }
+      ]
+    }
+  ];
   return (
     <div className="w-full h-full bg-[#262624] p-8 overflow-auto">
       <div className="w-full mx-auto">
@@ -315,8 +380,81 @@ const [expanded, setExpanded] = useState<Record<string, boolean>>({});
           <div className="relative ml-14">
             <div className="absolute -left-14 top-0 w-5 h-5 rounded-full bg-purple-400 border-4 border-slate-900 shadow-lg shadow-purple-400/50"></div>
             <div className="absolute -left-9 top-2 w-9 h-0.5 bg-purple-400"></div>
-            <div className="bg-gradient-to-r from-purple-500/20 to-emerald-500/20 backdrop-blur rounded-lg border-2 border-dashed border-purple-400/50 p-4">
+            <div className="bg-linear-to-r from-purple-500/20 to-emerald-500/20 backdrop-blur rounded-lg border-2 border-dashed border-purple-400/50 p-4">
               <span className="text-lg font-semibold text-white">🎉 JavaScript Mastery Complete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <div className="w-full mx-auto">
+        <h1 className="text-lg sm:text-3xl font-bold text-white mb-8 flex items-center gap-3">
+          <FileText className="w-8 h-8 text-emerald-400" />
+          Typescript docs - learning pipeline (cheat sheet)
+        </h1>
+        
+        <div className="relative mt-8">
+          {/* Vertical pipeline line */}
+          <div className="absolute left-6 top-0 bottom-0 w-1 bg-linear-to-b from-emerald-400 via-blue-400 to-purple-400" style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 5px, #262624 5px, #262624 10px)' }}></div>
+          
+          {tssections.map((section) => (
+            <div key={section.id} className="relative mb-6 ml-14">
+              {/* Pipeline node */}
+              <div className="absolute -left-14 top-3 w-5 h-5 rounded-full bg-emerald-400 border-4 border-slate-900 shadow-lg shadow-emerald-400/50"></div>
+              
+              {/* Connection line to card */}
+              <div className="absolute -left-9 top-5 w-9 h-0.5 bg-emerald-400"></div>
+              
+              {/* Stage card */}
+              <div className="bg-slate-800/80 backdrop-blur rounded-lg border-2 border-dashed border-slate-700 shadow-xl hover:shadow-2xl transition-all duration-300">
+                <div 
+                  className="p-4 cursor-pointer flex items-center justify-between hover:bg-slate-700/50 rounded-lg transition-colors"
+                  onClick={() => toggleExpand(section.id)}
+                >
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-3">
+                    <Folder className="w-5 h-5 text-emerald-400" />
+                    <span className="text-sm sm:text-lg font-semibold text-white">{section.title}</span>
+                    {section.items.length > 0 && (
+                      <span className="text-xs bg-slate-700 text-slate-300 px-2 py-1 rounded-full">
+                        {section.items.length} topics
+                      </span>
+                    )}
+                  </div>
+                  {section.items.length > 0 && (
+                    expanded[section.id] ? 
+                      <ChevronDown className="w-5 h-5 text-slate-400" /> : 
+                      <ChevronRight className="w-5 h-5 text-slate-400" />
+                  )}
+                </div>
+                
+                {/* Subtopics */}
+                {expanded[section.id] && section.items.length > 0 && (
+                  <div className="px-4 pb-4 space-y-2 border-t-2 border-dashed border-slate-700 mt-2 pt-4">
+                    {section.items.map((item, idx) => (
+                      <a
+                        key={idx}
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-start gap-3 p-2 rounded hover:bg-slate-700/30 transition-colors group ${item.indent ? 'ml-6' : ''}`}
+                      >
+                        <div className="w-2 h-2 rounded-full bg-blue-400 mt-2 group-hover:bg-blue-300 transition-colors flex-shrink-0"></div>
+                        <span className="text-slate-300 text-sm group-hover:text-white transition-colors flex-1">{item.name}</span>
+                        <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-blue-400 transition-colors flex-shrink-0 mt-1.5" />
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+          
+          {/* End marker */}
+          <div className="relative ml-14">
+            <div className="absolute -left-14 top-0 w-5 h-5 rounded-full bg-purple-400 border-4 border-slate-900 shadow-lg shadow-purple-400/50"></div>
+            <div className="absolute -left-9 top-2 w-9 h-0.5 bg-purple-400"></div>
+            <div className="bg-linear-to-r from-purple-500/20 to-emerald-500/20 backdrop-blur rounded-lg border-2 border-dashed border-purple-400/50 p-4">
+              <span className="text-lg font-semibold text-white">🎉 Typescript Mastery Complete</span>
             </div>
           </div>
         </div>

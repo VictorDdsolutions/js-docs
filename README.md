@@ -278,3 +278,50 @@ Advanced topics
  -- [Meta programming](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Meta_programming)
 
  -- [Memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Memory_management)
+
+
+#### Typescript
+The Basics
+  - [Overview](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
+  - [Everyday Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+  - [Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
+  - [More on Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
+  - [Object Types](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+
+Type Manipulation
+  - [Overview](https://www.typescriptlang.org/docs/handbook/2/types-from-types.html)
+  - [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
+  - [Keyof Type Operator](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html)
+  - [Typeof Type Operator](https://www.typescriptlang.org/docs/handbook/2/typeof-types.html)
+  - [Indexed Access Types](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html)
+  - [Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
+  - [Mapped Types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)
+  - [Template Literal Types](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html)
+
+
+Classes
+  - [Overview](https://www.typescriptlang.org/docs/handbook/2/classes.html)
+
+Modules
+  - [Overview](https://www.typescriptlang.org/docs/handbook/2/modules.html)
+
+References
+  - [Overview](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+  - [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+  - [Decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)
+  - [Declaration Merging](https://www.typescriptlang.org/docs/handbook/declaration-merging.html)
+  - [Enums](https://www.typescriptlang.org/docs/handbook/enums.html)
+  - [Iterators and Generators](https://www.typescriptlang.org/docs/handbook/iterators-and-generators.html)
+  - [JSX](https://www.typescriptlang.org/docs/handbook/jsx.html)
+  - [Mixins](https://www.typescriptlang.org/docs/handbook/mixins.html)
+  - [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
+  - [Namespaces and Modules](https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html)
+  - [Symbols](https://www.typescriptlang.org/docs/handbook/symbols.html)
+  - [Triple-Slash Directives](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)
+  - [Type Compatibility](https://www.typescriptlang.org/docs/handbook/type-compatibility.html)
+  - [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
+  - [Variable Declaration](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
+  - [Modules - Reference](https://www.typescriptlang.org/docs/handbook/modules/reference.html)
+  - [Declaration Reference](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html)
+  - [Library Structures](https://www.typescriptlang.org/docs/handbook/declaration-files/library-structures.html)
+  
